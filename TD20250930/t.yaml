@@ -1,0 +1,15 @@
+tests: 
+  - name: test 1
+    var mass1: 5.972e24
+    var mass2: 73.48e21
+    var distance: 384400e3
+    stdout:
+      - contains: "198e18"
+  - name: test 2
+    stdin: "3600"
+    stdout: 
+      - contains: "35.4e21"
+  - name: test 3
+    stdin: "3661"
+    stdout:
+      - contains: "3.73e9"
