@@ -2,6 +2,9 @@
 
 int main(int argc, const char *argv[])
 {
-	puts("Hello everybody!");
+	int t[3] = {1,2,3};
+	int *p = t;
+	printf("%d",++*p);
+	printf("%d",*p);
 	return 0;
 }
